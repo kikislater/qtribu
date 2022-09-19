@@ -1,0 +1,7 @@
+qtribu.gui.form\_rdp\_news module
+=================================
+
+.. automodule:: qtribu.gui.form_rdp_news
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,7 @@
+qtribu.gui.gui\_commons module
+==============================
+
+.. automodule:: qtribu.gui.gui_commons
+   :members:
+   :undoc-members:
+   :show-inheritance:

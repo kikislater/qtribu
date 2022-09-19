@@ -1,0 +1,18 @@
+qtribu.gui package
+==================
+
+.. automodule:: qtribu.gui
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   qtribu.gui.dlg_settings
+   qtribu.gui.form_rdp_news
+   qtribu.gui.gui_commons
+   qtribu.gui.wdg_authoring

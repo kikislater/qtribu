@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="CHANGELOG" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="https://geotribu.github.io/qtribu/development/history.html" />
+  
+<meta property="og:site_name" content="QTribu : reste en qontact avec la GéoTribu" />
+  
+<meta property="og:description" content="The format is based on Keep a Changelog, and this project adheres to Semantic Versioning. 0.15.0-beta2 - 2022-09-06: CI/CD: fix release workflow, add reset button to settings. 0.15.0-beta1 - 2022-0..." />
+  
+<meta property="og:image" content="https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png" />
+  
+<meta property="og:image:alt" content="QTribu : reste en qontact avec la GéoTribu" />
+  
+<meta name='twitter:card' content='summary_large_image'>
+<meta property="twitter:description" content="Geotribu (https://static.geotribu.fr) content right into QGIS.
+Garde le Qontact avec ta Geotribu !" />
+<meta property="twitter:image" content="https://cdn.geotribu.fr/img/projets-geotribu/plugin_qtribu/qtribu_article_displayed.png" />
+<meta property="twitter:site" content="@geotribu" />
+<meta property="twitter:title" content="QTribu" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHANGELOG &mdash; Documentation QTribu 0.15.0-beta2</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/logo_geotribu.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="prev" title="Testing the plugin" href="testing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: SteelBlue" >
+            <a href="../index.html" class="icon icon-home"> QTribu
+            <img src="../_static/logo_geotribu.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.15.0-beta2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Manuel d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/feature_latest_article.html">Dernier article publié</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/splash_changer.html">Changer le splash screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage/settings.html">Configuration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guide de contribution</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../_apidoc/modules.html">Code documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">Environnement de développement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translation.html">Manage translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packaging.html">Packaging and deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing the plugin</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CHANGELOG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#beta2-2022-09-06">0.15.0-beta2 - 2022-09-06</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beta1-2022-08-22">0.15.0-beta1 - 2022-08-22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.14.2 - 2022-08-05</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.14.1 - 2022-08-05</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">0.14.0 - 2022-08-05</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">0.13.0 - 2022-07-18</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">0.12.0 - 2022-07-12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.11.0 - 2022-03-17</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">0.10.0 - 2022-01-02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">0.9.0 - 2021-08-12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">0.8.0 - 2021-08-11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">0.7.0 - 2021-08-10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">0.6.3 - 2021-06-14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">0.6.2 - 2021-06-14</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">0.6.1 - 2021-06-11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">0.6.0 - 2021-06-04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">0.5.0 - 2021-05-30</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">0.4.1 - 2021-04-09</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">0.4.0 - 2021-04-01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id18">0.3.1 - 2021-03-08</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">0.3.0 - 2021-03-06</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id20">[0.2.1] - 2021-03-04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id21">[0.2.0] - 2021-03-04</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id22">[0.1.1] - 2021-03-03</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">[0.1.0] - 2021-02-28</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ressources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://static.geotribu.fr/articles/2021/2021-04-01_qtribu_plugin_qgis_geotribu/">Article de présentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: SteelBlue" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">QTribu</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>CHANGELOG</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/development/history.md.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="testing.html" class="btn btn-neutral float-left" title="Testing the plugin" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="changelog">
+<h1>CHANGELOG<a class="headerlink" href="#changelog" title="Lien permanent vers cette rubrique"></a></h1>
+<p>The format is based on <a class="reference external" href="https://keepachangelog.com/">Keep a Changelog</a>, and this project adheres to <a class="reference external" href="https://semver.org/">Semantic Versioning</a>.</p>
+<!--
+
+Unreleased
+
+## [{version_tag}](https://github.com/geotribu/qtribu/releases/tag/{version_tag}) - YYYY-DD-mm
+
+-->
+<section id="beta2-2022-09-06">
+<h2>0.15.0-beta2 - 2022-09-06<a class="headerlink" href="#beta2-2022-09-06" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>CI/CD: fix release workflow</p></li>
+<li><p>add reset button to settings</p></li>
+</ul>
+</section>
+<section id="beta1-2022-08-22">
+<h2>0.15.0-beta1 - 2022-08-22<a class="headerlink" href="#beta1-2022-08-22" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Add form to create a news for GeoRDP #84</p></li>
+</ul>
+</section>
+<section id="id1">
+<h2>0.14.2 - 2022-08-05<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Hotfix renomme l’ancien nom d’un paramètre</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>0.14.1 - 2022-08-05<a class="headerlink" href="#id2" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Hotfix enlève un bout d’ancienne syntaxe de traduction</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>0.14.0 - 2022-08-05<a class="headerlink" href="#id3" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>corrige le chargement de la traduction après que le module dédié ne fonctionne plus sur QGIS 3.22+</p></li>
+<li><p>améliore le module de log pour permettre de mieux personnaliser le <code class="docutils literal notranslate"><span class="pre">QgsMessageOutput</span></code></p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>0.13.0 - 2022-07-18<a class="headerlink" href="#id4" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>corrige le lien vers l’aide dans le menu #78</p></li>
+<li><p>modernise la gestion des préférences en utilisant une dataclass</p></li>
+<li><p>actualise l’outillage (GitHub Actions, étiquetage automatique, etc.)</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>0.12.0 - 2022-07-12<a class="headerlink" href="#id5" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>mise à jour des dépendances</p></li>
+<li><p>test sur la version 3.22</p></li>
+<li><p>publication sur le dépôt officiel des extensions</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>0.11.0 - 2022-03-17<a class="headerlink" href="#id6" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>les traductions compilées (fichiers <code class="docutils literal notranslate"><span class="pre">*.qm</span></code>) sont désormais générées et automatiquement intégrées dans la CI - #34</p></li>
+<li><p>ajoute un lien vers le forum QGIS de GeoRezo</p></li>
+</ul>
+</section>
+<section id="id7">
+<h2>0.10.0 - 2022-01-02<a class="headerlink" href="#id7" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>la requête vers le flux RSS attend désormais que l’application QGIS soit complètement chargée pour ne pas ralentir le lancement, en particulier quand la connexion réseau n’est pas idéale. Jusque-là elle était envoyée à la fin du chargement du plugin.</p></li>
+<li><p>la gestion de l’affichage du dernier contenu a été déportée dans un module dédié (WebViewer).</p></li>
+</ul>
+</section>
+<section id="id8">
+<h2>0.9.0 - 2021-08-12<a class="headerlink" href="#id8" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>augmente la durée par défaut de la notification de 3 à 10 secondes</p></li>
+<li><p>permet à l’utilisateur de définir la durée de la notification</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2>0.8.0 - 2021-08-11<a class="headerlink" href="#id9" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>ajout d’un bouton pour effacer l’historique de consultation</p></li>
+<li><p>correction d’un bug dans la condition permettant d’afficher un bouton dans les notifications push</p></li>
+<li><p>améliorations mineures</p></li>
+</ul>
+</section>
+<section id="id10">
+<h2>0.7.0 - 2021-08-10<a class="headerlink" href="#id10" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>ajout d’un bouton dans la notification pour ouvrir directement le dernier contenu</p></li>
+<li><p>simplification de la maintenance du formulaire des préférences</p></li>
+</ul>
+</section>
+<section id="id11">
+<h2>0.6.3 - 2021-06-14<a class="headerlink" href="#id11" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>utilise les QgsSettings plutôt que l’édition du fichier ini pour activer la personnalisation de l’interface, pour cause d’inconsistance entre les systèmes d’exploitation, en particulier MacOS</p></li>
+</ul>
+</section>
+<section id="id12">
+<h2>0.6.2 - 2021-06-14<a class="headerlink" href="#id12" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>améliore le mécanisme de changement du splash screen pour gérer les chemins Windows (ou plutôt leur stockage dans un .ini et interprétation par QGIS)</p></li>
+</ul>
+</section>
+<section id="id13">
+<h2>0.6.1 - 2021-06-11<a class="headerlink" href="#id13" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>change le splash screen</p></li>
+<li><p>ajoute le lien vers l’article sur le splash screen dans la doc</p></li>
+</ul>
+</section>
+<section id="id14">
+<h2>0.6.0 - 2021-06-04<a class="headerlink" href="#id14" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>prise en compte du mode debug</p></li>
+<li><p>activation du module permettant de changer/restaurer le splash screen (<a class="reference external" href="https://static.geotribu.fr/articles/2021/2021-06-17_qgis_personnaliser_splash_screen/">voir l’article dédié</a>)</p></li>
+<li><p>traduction en français et réduction du warning de non traduction. A noter que, contrairement aux bonnes pratiques de git, les fichiers <code class="docutils literal notranslate"><span class="pre">.qm</span></code> (binaires) sont stockés dans le dépôt, jusqu’à ce que <a class="reference external" href="https://github.com/opengisch/qgis-plugin-ci/issues/47">le ticket upstream</a> soit résolu.</p></li>
+<li><p>documentation : ajout des balises OpenGraph, de pages manquantes et améliorations diverses</p></li>
+<li><p>CI : améliorations diverses (emojis…)</p></li>
+</ul>
+</section>
+<section id="id15">
+<h2>0.5.0 - 2021-05-30<a class="headerlink" href="#id15" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>ajout du mécanisme permettant de notifier l’utilisateur si un nouveau contenu a été publié</p></li>
+<li><p>amélioration des paramètres</p></li>
+</ul>
+</section>
+<section id="id16">
+<h2>0.4.1 - 2021-04-09<a class="headerlink" href="#id16" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>améliorations diverses :</p>
+<ul>
+<li><p>meilleure gestion des paramètres du plugin</p></li>
+<li><p>personnalisation des en-têtes pour les appels réseau</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id17">
+<h2>0.4.0 - 2021-04-01<a class="headerlink" href="#id17" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>fin de la période de tests : publication dans le canal stable</p></li>
+</ul>
+</section>
+<section id="id18">
+<h2>0.3.1 - 2021-03-08<a class="headerlink" href="#id18" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>corrige un problème de type lors de la récupération des options enregistrées</p></li>
+</ul>
+</section>
+<section id="id19">
+<h2>0.3.0 - 2021-03-06<a class="headerlink" href="#id19" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>préférences : menu réglages, intégration des options à l’interface de QGIS</p></li>
+<li><p>ajout d’une option pour choisir dans quel navigateur internet ouvrir les pages : celui intégré à QGIS ou le navigateur par défaut de l’utilisateur/ice</p></li>
+</ul>
+</section>
+<section id="id20">
+<h2>[0.2.1] - 2021-03-04<a class="headerlink" href="#id20" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>correction d’un import d’un futur module pas encore inclus</p></li>
+</ul>
+</section>
+<section id="id21">
+<h2>[0.2.0] - 2021-03-04<a class="headerlink" href="#id21" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>ajout du raccourci vers l’aide en ligne</p></li>
+<li><p>déplacement du menu du plugin dans la catégorie “Web”</p></li>
+</ul>
+</section>
+<section id="id22">
+<h2>[0.1.1] - 2021-03-03<a class="headerlink" href="#id22" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>correction d’un bug avec les versions de Python inférieures à 3.8</p></li>
+</ul>
+</section>
+<section id="id23">
+<h2>[0.1.0] - 2021-02-28<a class="headerlink" href="#id23" title="Lien permanent vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>première version !</p></li>
+<li><p>structure du dépôt et outillage de base (modularité, traduction, linter, documentation, packaging…)</p></li>
+<li><p>fonctionnellement, le plugin consiste en un bouton qui télécharge le flux RSS et affiche le dernier contenu publié dans le navigateur intégré à QGIS</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="testing.html" class="btn btn-neutral float-left" title="Testing the plugin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 - 2022, Julien Moura (Geotribu).</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+qtribu.gui.wdg\_authoring module
+================================
+
+.. automodule:: qtribu.gui.wdg_authoring
+   :members:
+   :undoc-members:
+   :show-inheritance:

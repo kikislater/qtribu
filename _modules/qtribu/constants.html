@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>qtribu.constants &mdash; Documentation QTribu 0.15.0-beta2</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/logo_geotribu.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: SteelBlue" >
+            <a href="../../index.html" class="icon icon-home"> QTribu
+            <img src="../../_static/logo_geotribu.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                0.15.0-beta2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Manuel d'utilisation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/feature_latest_article.html">Dernier article publié</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/splash_changer.html">Changer le splash screen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../usage/settings.html">Configuration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guide de contribution</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../_apidoc/modules.html">Code documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/contribute.html">Contributing Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/environment.html">Environnement de développement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/documentation.html">Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/translation.html">Manage translations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/packaging.html">Packaging and deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/testing.html">Testing the plugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/history.html">CHANGELOG</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ressources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://static.geotribu.fr/articles/2021/2021-04-01_qtribu_plugin_qgis_geotribu/">Article de présentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: SteelBlue" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">QTribu</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Code du module</a> &raquo;</li>
+          <li><a href="../qtribu.html">qtribu</a> &raquo;</li>
+      <li>qtribu.constants</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Code source de qtribu.constants</h1><div class="highlight"><pre>
+<span></span><span class="ch">#! python3  # noqa: E265</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Plugin constants.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># standard</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+
+
+<span class="c1"># Classes</span>
+<div class="viewcode-block" id="RdpNewsCategory"><a class="viewcode-back" href="../../_apidoc/qtribu.constants.html#qtribu.constants.RdpNewsCategory">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">RdpNewsCategory</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">order</span><span class="p">:</span> <span class="nb">int</span>
+    <span class="n">example</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="GeotribuImage"><a class="viewcode-back" href="../../_apidoc/qtribu.constants.html#qtribu.constants.GeotribuImage">[docs]</a><span class="nd">@dataclass</span>
+<span class="k">class</span> <span class="nc">GeotribuImage</span><span class="p">:</span>
+    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">kind</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="GeotribuImage.local_path"><a class="viewcode-back" href="../../_apidoc/qtribu.constants.html#qtribu.constants.GeotribuImage.local_path">[docs]</a>    <span class="k">def</span> <span class="nf">local_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base_path</span><span class="p">:</span> <span class="n">Path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">()</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;.geotribu/cdn/&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Path</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Get expected local path.</span>
+
+<span class="sd">        :param base_path: base path to store images, defaults to Path().home()/&quot;.geotribu/cdn/&quot;</span>
+<span class="sd">        :type base_path: Path, optional</span>
+
+<span class="sd">        :return: local path to the image</span>
+<span class="sd">        :rtype: Path</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">url_parsed</span> <span class="o">=</span> <span class="n">urlparse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Path</span><span class="p">(</span><span class="n">base_path</span> <span class="o">/</span> <span class="n">url_parsed</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span></div></div>
+
+
+<span class="c1"># Objects</span>
+<span class="n">GEORDP_NEWS_CATEGORIES</span><span class="p">:</span> <span class="nb">tuple</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Sorties de la semaine&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Pour relayer les nouveautés dans les outils de la &quot;</span>
+        <span class="s2">&quot;géomatique. Attention, il ne s&#39;agit pas de paraphraser les notes de version &quot;</span>
+        <span class="s2">&quot;ou les communiqués de presse, mais d&#39;apporter une valeur ajoutée personnelle.&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Logiciel&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Découverte, cas d&#39;usage d&#39;un logiciel pas forcément nouveau mais &quot;</span>
+        <span class="s2">&quot;intéressant.&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Représentation cartographique&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Dataviz, cartographies, art...&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">example</span><span class="o">=</span><span class="s2">&quot;https://static.geotribu.fr/rdp/2021/rdp_2021-06-18/#francepixel-bati&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;OpenStreetMap&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Toute news liée au plus grand projet de cartographie &quot;</span>
+        <span class="s2">&quot;collaborative mondiale.&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Toute news liée à la plus grande agence de publicité numérique &quot;</span>
+        <span class="s2">&quot;mondiale.&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Open Data&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Tout ce qui a trait aux données ouvertes.&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
+        <span class="n">example</span><span class="o">=</span><span class="s2">&quot;https://static.geotribu.fr/rdp/2020/rdp_2020-12-11/#open-data&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Geo-event&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Evénements, salons, conférences...&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span>
+        <span class="n">example</span><span class="o">=</span><span class="s2">&quot;SAGEO, GéoDataDays, CartoMob, &quot;</span>
+        <span class="s2">&quot;https://static.geotribu.fr/rdp/2020/rdp_2020-12-11/#rencontres-des-utilisateurs-francophones-de-qgis)...&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">RdpNewsCategory</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Divers&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Tout ce qui ne rentre pas dans les autres sections.&quot;</span><span class="p">,</span>
+        <span class="n">order</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+        <span class="n">example</span><span class="o">=</span><span class="s2">&quot;https://static.geotribu.fr/rdp/2021/rdp_2021-03-26/#les-villes-ont-elles-un-corps&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+
+<span class="n">GEORDP_NEWS_ICONS</span><span class="p">:</span> <span class="nb">tuple</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;news&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/news.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône news générique&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;world&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/world.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe générique&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;absurde&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/absurde.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe retourné&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;ancien&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/ancien.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe ancien&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;flux&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/flux.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe flux&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;genre&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/genre.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe genre&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;heatmap&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/heatmap.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe heatmap&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;itinéraire&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/itineraire.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe itinéraire&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;mentale&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/mentale.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe mentale&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;metro&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/metro.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe metro&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;microworld&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/microworld.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe microworld&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;night&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/night.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe night&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;mystique&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/mystique.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe mystique&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="n">GeotribuImage</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s2">&quot;pointillisme&quot;</span><span class="p">,</span>
+        <span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://cdn.geotribu.fr/img/internal/icons-rdp-news/pointillisme.png&quot;</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="s2">&quot;icon&quot;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;icône globe pointillisme&quot;</span><span class="p">,</span>
+    <span class="p">),</span>
+<span class="p">)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021 - 2022, Julien Moura (Geotribu).</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>

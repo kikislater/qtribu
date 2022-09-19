@@ -1,0 +1,7 @@
+qtribu.logic.splash\_changer module
+===================================
+
+.. automodule:: qtribu.logic.splash_changer
+   :members:
+   :undoc-members:
+   :show-inheritance:

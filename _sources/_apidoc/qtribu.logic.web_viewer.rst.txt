@@ -1,0 +1,7 @@
+qtribu.logic.web\_viewer module
+===============================
+
+.. automodule:: qtribu.logic.web_viewer
+   :members:
+   :undoc-members:
+   :show-inheritance:

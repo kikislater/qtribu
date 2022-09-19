@@ -1,0 +1,7 @@
+qtribu.constants module
+=======================
+
+.. automodule:: qtribu.constants
+   :members:
+   :undoc-members:
+   :show-inheritance:
